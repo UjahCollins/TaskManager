@@ -1,0 +1,396 @@
+.mainContainer{
+  background-color: white;
+  height: 200vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+.container{
+  width: 80%;
+  height: 95vh;
+  background-color: #21212d;
+  display: flex;
+  gap: 0.1%;
+  position: relative;
+  /* justify-content: space-between; */
+  margin-top: 0;
+}
+.container2{
+  display: none;
+  width: 80%;
+  height: 95%;
+  background-color: #21212dd9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+  position: absolute;
+  margin-top: 0;
+  z-index: 1;
+  
+}
+.container2Hide{
+  width: 80%;
+  height: 95vh;
+  background-color: #21212dd9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+  position: absolute;
+  margin-top: 0;
+  z-index: 1;
+  
+}
+.sidebar{
+  width: 20%;
+  height: 100%;
+  background-color: #2c2c38;
+  color: white;
+}
+.SidebarContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-color: #2c2c38;
+
+}
+.sec1Sidebar{
+  width: 90%;
+  height: 15%;
+}
+.sec2Sidebar{
+  width: 90%;
+  height: 70%;
+}
+.sec3Sidebar{
+  width: 90%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec2Sidebar p{
+  font-size: 10px;
+}
+
+.active{
+  width: 90%;
+  height: 30px;
+  background-color: #645fc6;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 0px 15px 15px 0px;
+  color: white;
+}
+.sec2Sidebar h5{
+  font-size: 11px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.toggle{
+  width: 90%;
+  height: 40px;
+  background-color: #21212d;
+}
+.sec3Sidebar p{
+  font-size: 10px;
+  width: 90%;
+}
+.secondPart{
+  width: 79.9%;
+  height: 100%;
+}
+
+.header{
+  width: 100%;
+  height: 15vh;
+  background-color: #2c2c38;
+  margin: 0;
+  color: white;
+}
+.mainHeader{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+.rightHeader{
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 20px ;
+}
+.rightHeader p{
+  font-size: 20px;
+  margin: 0px;
+}
+.task{
+  width: 80%;
+  height: 80vh;
+  color: white;
+}
+.leftHeader{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  gap: 10px;
+}
+.newTask{
+  width: 150px;
+  height: 40px;
+  background-color: #645fc6;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.profile{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #645fc6;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* margin-top: 40px; */
+  border: none;
+}
+.logout{
+  /* margin-top: 20px; */
+  width: 75px;
+  height: 25px;
+  /* margin-left: -20px; */
+ 
+}
+.logout button{
+  background-color: #645fc6;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.taskContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.todo{
+  width: 30%;
+  height: 100%;
+  margin-left: 10px;
+}
+.doing{
+  width: 30%;
+  height: 100%;
+  margin-left: 10px;
+}
+.done{
+  width: 30%;
+  height: 100%;
+  margin-left: 10px;
+}
+.todoheader{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.todoheader p{
+  font-size: 12px;
+}
+.todoCircle{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: aqua;
+}
+.doingCircle{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #826fec;
+}
+.doneCircle{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #5de1a7;
+}
+.todoTasks{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow-y: scroll;
+}
+.taskDetails{
+  width: 100%;
+  height: 15%;
+  background-color: #2c2c38;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.taskDetails h6{
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0;
+}
+.taskDetails p{
+  font-weight: 400;
+  font-size: 10px;
+  margin: 0;
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: grey;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+ background-color: transparent;
+}
+.taskCard{
+  width: 30%;
+  height: 90%;
+  background-color: #2c2c38;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+}
+.taskcardHeader{
+  width: 90%;
+  height: 10%;
+  color: white;
+  font-size: 12px;
+  margin: 0;
+}
+.TaskInput1{
+  width: 80%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 10px;
+  margin: 0;
+}
+.TaskInput1 input{
+  background-color: transparent;
+  height: 80%;
+  width: 100%;
+  border: solid 2px grey;
+  color: white;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.TaskInput2{
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 10px;
+}
+.TaskInput2 input{
+width: 100%;
+height: 100px;
+color: white;
+background-color: transparent;
+border: solid 2px grey;
+font-size: 10px;
+border-radius: 5px;
+}
+.TaskInput3{
+  width: 80%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 10px;
+  justify-content: space-between;
+}
+.TaskInput3 input{
+  width: 100%;
+  height: 25%;
+  background-color: transparent;
+  border: solid 2px grey;
+font-size: 10px;
+color: white;
+border-radius: 5px;
+
+}
+.TaskInput3 button{
+  width: 100%;
+  height: 25%;
+  background-color: white;
+  color: #826fec;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+
+}
+.TaskInput4{
+  width: 80%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 10px;
+}
+.TaskInput4 select {
+  background-color: transparent;
+  color: white;
+  height: 60%;
+  width: 100%;
+  font-size: 10px;
+}
+.TaskInput4 select option{
+  background-color: #21212d;
+  font-size: 10px;
+}
+.TaskInput4 p{
+  margin: 0;
+}
+.AddTaskBtn{
+  width: 80%;
+  height: 8%;
+  background-color: #645fc6;
+  color: white;
+  font-size: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
